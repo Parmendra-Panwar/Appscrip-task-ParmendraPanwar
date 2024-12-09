@@ -6,6 +6,8 @@ import imgg3 from "../../public/GPAY.png";
 import imgg4 from "../../public/MPAY.png";
 import imgg5 from "../../public/OPAY.png";
 import imgg6 from "../../public/PPAY.png";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaLinkedin } from "react-icons/fa";
 
 import { useState } from "react";
 import styling from "./Footer.module.css";
@@ -69,8 +71,12 @@ const Footer: React.FC = () => {
         <div className={styling.social}>
           <h5>FOLLOW US</h5>
           <div className={styling.socialIcons}>
-            <span className={styling.icon}>📷</span>
-            <span className={styling.icon}>🔗</span>
+            <div className={styling.socialIconsIcon}>
+              <PiInstagramLogoFill size={30} />
+            </div>
+            <div className={styling.socialIconsIcon}>
+              <FaLinkedin size={30} />
+            </div>
           </div>
           <h5>mettà muse ACCEPTS</h5>
           <div className={styling.paymentIcons}>

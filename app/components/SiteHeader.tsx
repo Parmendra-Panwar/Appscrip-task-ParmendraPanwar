@@ -13,10 +13,11 @@ const SiteHeader = () => {
       <div className={styling.HeaderUpSec}>
         <div className={styling.HeaderLogo}>
           <Image src={logoImg} alt="Apple Pay" width={40} height={40} />
-
-          <IoReorderThreeOutline size={50} className={styling.threeLine} />
+          <div className={styling.threeLineParent}>
+            <IoReorderThreeOutline size={55} className={styling.threeLine} />
+          </div>
         </div>
-        <div className={styling.HeaderTitle}>
+        <div className={`${styling.HeaderTitle} `}>
           <h1>LOGO</h1>
         </div>
         <div className={styling.HeaderIcos}>
