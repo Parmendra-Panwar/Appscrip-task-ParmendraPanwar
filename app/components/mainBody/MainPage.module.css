@@ -1,43 +1,38 @@
-/* Main container with filter and card sections */
+
 .mainContainer {
   display: flex;
   gap: 20px;
-  position: relative; /* For overlay positioning on smaller screens */
+  position: relative;
   min-height: 100vh;
 }
-
-/* Default: Filter section */
 .FilterSection {
   flex: 1;
 }
 
-/* Card section takes remaining space */
 .CardSection {
   flex: 3;
   width: 100%;
-  margin-top: 0; /* Prevent shifting */
+  margin-top: 0; 
 }
 
-/* Hidden state for filter */
 .hidden {
   display: none;
 }
 
-/* Styles for smaller screens */
 @media (max-width: 1024px) {
   .mainContainer {
     flex-direction: column;
   }
 
   .FilterSection {
-    position: absolute; /* Prevents pushing down */
-    top: 40px; /* Adjust to match TopSection height */
+    position: absolute; 
+    top: 40px; 
     left: 0;
     width: 274px;
-    min-height: 150vh; /* Full-width overlay */
+    min-height: 150vh; 
     background-color: #fff;
     z-index: 10;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px;
   }
 
@@ -46,13 +41,11 @@
     margin-top: 20px;
   }
 
-  /* When FilterSection is hidden */
   .hidden {
     display: none;
   }
 }
 
-/* TopSection styles for sticky header */
 .container {
   display: flex;
   justify-content: space-between;
