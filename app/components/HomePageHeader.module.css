@@ -22,7 +22,7 @@
   margin: 0 auto; 
 }
 
-@media (max-width: 768px) { /* For smaller screens */
+@media (max-width: 768px) { 
   .headerText {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
   }

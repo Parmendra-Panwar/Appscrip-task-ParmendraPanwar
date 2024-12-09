@@ -15,7 +15,7 @@
   font-weight: bold;
   margin-bottom: 12px;
   cursor: pointer;
-  padding: 8px 0; /* Padding around the filter header */
+  padding: 8px 0; 
 }
 
 .arrow {
@@ -27,20 +27,20 @@
 }
 
 .dropdownContainer {
-  margin-bottom: 16px; /* Space between filters */
+  margin-bottom: 16px; 
 }
 
 .dropdownContent {
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.3s ease;
-  max-height: 0; /* Initially hidden */
-  padding: 0 16px; /* Padding around the content */
-  border-top: 1px solid #333; /* Border only on top */
+  max-height: 0; 
+  padding: 0 16px; 
+  border-top: 1px solid #333; 
 }
 
 .expanded {
-  max-height: 500px; /* Allow the dropdown to expand */
-  padding: 16px 16px; /* Increased padding for content */
+  max-height: 500px; 
+  padding: 16px 16px; 
 }
 
 .selectActions {

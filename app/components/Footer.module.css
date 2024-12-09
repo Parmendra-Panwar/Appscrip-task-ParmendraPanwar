@@ -144,9 +144,7 @@
   flex-direction: column;
   gap: 0px;
 }
-/* Responsive Design */
 @media (max-width: 768px) {
-  /* Top section adjusts for smaller screen */
   .topSection {
     flex-direction: column;
     gap: 20px;
@@ -168,16 +166,14 @@
     border-bottom: 0.5px solid rgb(151, 151, 151);
   }
 
-  /* Info items are collapsed by default */
   .info ul {
     max-height: 0;
   }
 
   .info.open ul {
-    max-height: 500px; /* Arbitrary max-height for unfolding */
+    max-height: 500px; 
   }
 
-  /* Social media and payment icons should be centered */
   .socialIcons,
   .paymentIcons {
     justify-content: center;
@@ -187,7 +183,6 @@
     gap: 15px;
   }
 
-  /* Adjust font sizes for better readability */
   .info h5 {
     font-size: 20px;
   }
@@ -207,12 +202,10 @@
     padding: 12px;
   }
 
-  /* Smaller fonts for the copyright */
   .copyright {
     font-size: 16px;
   }
 
-  /* Hide long titles and text in mobile view */
   .social h5,
   .paymentIcons h5 {
     display: none;
@@ -236,14 +229,13 @@
   }
 
   .info h5 {
-    font-size: 18px; /* Reduced size for smaller screens */
+    font-size: 18px; 
   }
 
   .info li {
-    font-size: 16px; /* Reduced size for better mobile usability */
+    font-size: 16px; 
   }
 
-  /* Adjust spacing between footer sections */
   .bottomSection {
     gap: 20px;
     flex-direction: column;
@@ -254,8 +246,8 @@
 
 .paymentIcons img {
   height: 32px;
-  width: auto; /* Maintain aspect ratio */
-  filter: brightness(0) invert(1); /* Ensure images fit dark theme */
+  width: auto; 
+  filter: brightness(0) invert(1); 
   transition: transform 0.3s ease, filter 0.3s ease;
   filter: brightness(1); 
 }
@@ -273,5 +265,5 @@
 
 .socialIcons span:hover {
   color: #999;
-  transform: scale(1.1); /* Add hover scale for interactivity */
+  transform: scale(1.1); 
 }
