@@ -1,0 +1,14 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+.GrendContainer{
+  width: 95%;
+  margin-left: 2.5%  ;
+  font-family: "Poppins", sans-serif;
+} 

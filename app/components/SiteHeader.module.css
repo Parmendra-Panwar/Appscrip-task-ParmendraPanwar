@@ -1,0 +1,144 @@
+.Header {
+  height: 130px;
+  padding: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-bottom: 1px solid #ddd; 
+}
+
+.HeaderUpSec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative; 
+}
+
+.HeaderLogo {
+  flex: 0; 
+}
+
+.HeaderTitle {
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.HeaderTitle h1{
+  font-weight: 700;
+  font-size: 40px;
+}
+.HeaderIcos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0; 
+}
+
+.IconeSpace {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px; 
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #363636;
+  position: relative;
+  transition: color 0.3s ease; 
+}
+
+.navLink:hover {
+  color: #333; 
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000; 
+  transition: width 0.3s ease; 
+}
+
+.navLink:hover::after {
+  width: 100%; 
+}
+.ProfileIcone{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.forMobileOnly{
+  display: none;
+}
+.threeLine{
+  display: none;
+}
+@media (max-width: 750px) {
+  .ProfileIcone{
+    display: none;
+  }
+  .DownIcone{
+    display: none;
+  }
+}
+
+@media (max-width: 668px) {
+  .threeLine{
+    display: block;
+  }
+  .HeaderLowSec{
+    margin-top: 0px;
+  } 
+  .navLink{
+    display: none;
+  }
+  .activeNavLink{
+    display: contents;
+  }
+  .Header{
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100px;
+  }
+  .navbar{
+    margin-top: 0px;
+  }
+}
+@media (max-width:426px) {
+  .Header{
+    padding: 5px;
+  }
+  .HeartIcone{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+} 
+
+
+.HeaderLogo{
+  display: flex;
+  flex-direction: row;
+}

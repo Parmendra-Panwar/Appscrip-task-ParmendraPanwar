@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 16px;
+  border-right: 1px solid #e0e0e0;
+  margin-top: 20px;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding: 8px 0; /* Padding around the filter header */
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.dropdownContainer {
+  margin-bottom: 16px; /* Space between filters */
+}
+
+.dropdownContent {
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  max-height: 0; /* Initially hidden */
+  padding: 0 16px; /* Padding around the content */
+  border-top: 1px solid #333; /* Border only on top */
+}
+
+.expanded {
+  max-height: 500px; /* Allow the dropdown to expand */
+  padding: 16px 16px; /* Increased padding for content */
+}
+
+.selectActions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.selectActions span:hover {
+  text-decoration: underline;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 4px;
+}
