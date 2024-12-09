@@ -1,11 +1,10 @@
 import Image from "next/image";
 import logoImg from "../../public/Logo.png";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import { IoLogoDribbble, IoIosHeartEmpty } from "react-icons/io";
+import { IoIosHeartEmpty } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import styling from "./SiteHeader.module.css";
 import { CgProfile } from "react-icons/cg";
-import { FaAngleDown } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa6";
 import { IoBagHandleOutline } from "react-icons/io5";
 const SiteHeader = () => {
