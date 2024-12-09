@@ -1,15 +1,74 @@
+/* Main container with filter and card sections */
 .mainContainer {
   display: flex;
-  flex-direction: row;
+  gap: 20px;
+  position: relative; /* For overlay positioning on smaller screens */
   min-height: 100vh;
 }
 
+/* Default: Filter section */
+.FilterSection {
+  flex: 1;
+}
+
+/* Card section takes remaining space */
+.CardSection {
+  flex: 3;
+  width: 100%;
+  margin-top: 0; /* Prevent shifting */
+}
+
+/* Hidden state for filter */
 .hidden {
   display: none;
 }
+
+/* Styles for smaller screens */
+@media (max-width: 1024px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .FilterSection {
+    position: absolute; /* Prevents pushing down */
+    top: 40px; /* Adjust to match TopSection height */
+    left: 0;
+    width: 274px;
+    min-height: 150vh; /* Full-width overlay */
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+    padding: 20px;
+  }
+
+  .CardSection {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* When FilterSection is hidden */
+  .hidden {
+    display: none;
+  }
+}
+
+/* TopSection styles for sticky header */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .GrendContainer{
-  width: 95%;
-  margin-left: 2.5%  ;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-} 
+  padding: 30px;
+  font-family:Arial, Helvetica, sans-serif
+}
