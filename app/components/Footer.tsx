@@ -1,4 +1,11 @@
 "use client";
+import Image from "next/image";
+import imgg1 from "../../public/AEPAY.png";
+import imgg2 from "../../public/APAY.png";
+import imgg3 from "../../public/GPAY.png";
+import imgg4 from "../../public/MPAY.png";
+import imgg5 from "../../public/OPAY.png";
+import imgg6 from "../../public/PPAY.png";
 
 import { useState } from "react";
 import styling from "./Footer.module.css";
@@ -67,10 +74,12 @@ const Footer: React.FC = () => {
           </div>
           <h5>mettà muse ACCEPTS</h5>
           <div className={styling.paymentIcons}>
-            <img src="https://via.placeholder.com/150" alt="Apple Pay" />
-            <img src="https://via.placeholder.com/150" alt="Mastercard" />
-            <img src="https://via.placeholder.com/150" alt="Amex" />
-            <img src="https://via.placeholder.com/150" alt="Paypal" />
+            <Image src={imgg1} alt="Apple Pay" width={40} height={40} />
+            <Image src={imgg2} alt="PayPal" width={40} height={40} />
+            <Image src={imgg3} alt="Google Pay" width={40} height={40} />
+            <Image src={imgg4} alt="MasterCard" width={40} height={40} />
+            <Image src={imgg5} alt="Other Pay" width={40} height={40} />
+            <Image src={imgg6} alt="Payment Platform" width={40} height={40} />
           </div>
         </div>
       </div>

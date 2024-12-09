@@ -49,7 +49,6 @@
   font-size: 14px;
   font-weight: 500;
   margin-top: 8px;
-  color: #007bff;
   cursor: pointer;
 }
 
@@ -74,4 +73,14 @@
   font-size: 16px;
   color: #333;
   margin-bottom: 4px;
+}
+.selectActions{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.custmzButton{
+  margin-bottom: 11px;
 }

@@ -1,3 +1,4 @@
+import { IoIosHeartEmpty } from "react-icons/io";
 import styling from "./SingleCard.module.css";
 
 type CardProps = {
@@ -38,12 +39,11 @@ const SingleCard: React.FC<CardProps> = ({
             <u style={{ cursor: "pointer" }}>Sign in</u> or Crete account to See
             the price
           </p>
-          {/* <div className={styling.price}>{item.price}</div> */}
           <div
             className={`${styling.heartIcon} ${isLiked ? styling.liked : ""}`}
             onClick={() => toggleLike(index)}
           >
-            ♥
+            <IoIosHeartEmpty size={30} />
           </div>
         </div>
       </div>

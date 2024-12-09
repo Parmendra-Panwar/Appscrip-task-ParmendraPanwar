@@ -29,12 +29,10 @@ const FilterSection: React.FC = () => {
     }, {} as Record<string, string[]>)
   );
 
-  // Toggles the dropdown visibility
   const toggleDropdown = (label: string) => {
     setExpanded(expanded === label ? null : label);
   };
 
-  // Select all options for a specific filter
   const handleSelectAll = (label: string) => {
     const filter = filters.find((f) => f.label === label);
     if (filter) {
@@ -42,12 +40,10 @@ const FilterSection: React.FC = () => {
     }
   };
 
-  // Unselect all options for a specific filter
   const handleUnselectAll = (label: string) => {
     setSelectedOptions((prev) => ({ ...prev, [label]: [] }));
   };
 
-  // Handle individual option selection
   const handleOptionChange = (label: string, option: string) => {
     setSelectedOptions((prev) => {
       const currentOptions = prev[label];
@@ -60,6 +56,18 @@ const FilterSection: React.FC = () => {
 
   return (
     <div className={styling.container}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "10px",
+          alignItems: "center",
+        }}
+      >
+        <input type="checkbox" className={styling.custmzButton} />
+        <div className={styling.filterHeader}>Customizble</div>
+      </div>
+      <hr />
       {filters.map((filter) => (
         <div key={filter.label} className={styling.dropdownContainer}>
           <div

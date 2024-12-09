@@ -1,13 +1,54 @@
-.asa{
+
+.scrollingWrapper {
   width: 100%;
-  height: 25px;
+  overflow: hidden; /* Hide overflowing content */
   background-color: black;
-  margin: 0px;
   color: rgb(239, 49, 49);
+  height: 25px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
-.loremTitle{
+
+.scrollingContent {
+  display: flex;
+  white-space: nowrap; 
+  animation: scroll 15s linear infinite; 
+  gap: 20px;
+}
+
+.loremTitle {
   font-size: small;
+  margin: 0 20px; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+@media (max-width: 768px) {
+
+  .loremTitle {
+    font-size: smaller;
+    margin: 0 10px; 
+  }
+
+  .scrollingContent {
+    animation: scroll 12s linear infinite; 
+  }
+}
+
+@media (max-width: 480px) {
+  .loremTitle {
+    font-size: x-small;
+    margin: 0 5px;
+  }
+
+  .scrollingContent {
+    animation: scroll 15s linear infinite; 
+  }
 }

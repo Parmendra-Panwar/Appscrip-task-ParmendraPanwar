@@ -249,3 +249,29 @@
     flex-direction: column;
   }
 }
+
+
+
+.paymentIcons img {
+  height: 32px;
+  width: auto; /* Maintain aspect ratio */
+  filter: brightness(0) invert(1); /* Ensure images fit dark theme */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(1); 
+}
+
+.paymentIcons img:hover {
+  transform: scale(1.1);
+  filter: brightness(1); 
+}
+
+.socialIcons span {
+  font-size: 32px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons span:hover {
+  color: #999;
+  transform: scale(1.1); /* Add hover scale for interactivity */
+}
